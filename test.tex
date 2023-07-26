@@ -1,0 +1,92 @@
+\documentclass[twocolumn]{article}
+\input{preamble.tex}
+
+\bib
+\bibliography{example.bib}
+
+
+
+\usepackage{authblk}
+\author[1]{Author 1}
+\author[2]{Author 2}
+
+% Author affiliations
+\affil[1]{Author institution}
+\affil[2]{Another Author's institution}
+
+% extra things
+\setcounter{Maxaffil}{0}
+\renewcommand\Affilfont{\itshape\small}
+
+
+\title{Physik Laborbericht Dokumentation}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+
+\begin{abstract}
+  In this document the author will try to explin the preamble he wrote.
+
+  Further this abstract is to show that the preamble, or rather lab reports
+  should contain an abstract, which is here made with the abstract package.
+\end{abstract}
+
+This is ideally becoming a package or class later, but for now a preamble will do.
+
+The preamble is optimized to write physic lab reports, additions with it are
+useful/needed packages. Another addition are the following tcolorboxes:
+    
+
+
+
+\section{tcolorboxes}
+\label{sec:tcol}
+
+
+\begin{ff}{Forschungsfrage}
+    ff, for Forschungsfrage, black colframe to stand out, use this only once to define the reasearch question.
+\label{Forschungsfrage}
+\end{ff}
+
+
+\begin{aufgabe}{Aufgabe}
+    aufgabe, to define the questions given in the tasksheet, these are to be
+    removed later, just to guide while writing, thus they were made red.
+\label{aufgabe-1}
+\end{aufgabe}
+
+
+\begin{mainbox}{Mainbox}
+    mainbox, this is for important things, maybe something like the following:
+
+\begin{mainbox}{Erkenntnis}
+    Daraus ergibt sich
+    \[ F_{el} \propto \frac{1}{r^2} .\] 
+\end{mainbox}
+\end{mainbox}
+
+
+\begin{subbox}{subbox}
+    subbux, for less important things, that are still highlight worthy.
+\end{subbox}
+
+\begin{subsubbox}
+    subsubbox, to highlight something, but without title.
+\end{subsubbox}
+
+
+
+
+\section{Citing}
+One cites as usual, e.g. ``The \TeX{}book''~\cite{knuth1986texbook}\\
+There is one addition, the command \textit{bib} to use the package to make it easier optional.
+
+
+
+
+% here the bibliography is printed 
+\printbibliography
+
+\end{document}
