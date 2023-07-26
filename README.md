@@ -1,4 +1,4 @@
-# phy-L-template
+# Physic Lab Template
 Template/preamble for Physic Lab Reports
 
 ## Files
