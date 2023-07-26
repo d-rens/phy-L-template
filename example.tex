@@ -1,22 +1,17 @@
 \documentclass[twocolumn]{article}
 \input{preamble.tex}
 
-\bib
 \bibliography{example.bib}
 
 
+%% Note: If your authors are always the same you can move this to the preamble
+% Authors, add more if you need to
+\author[1]{Author}
+\author[2]{Author}
 
-\usepackage{authblk}
-\author[1]{Author 1}
-\author[2]{Author 2}
-
-% Author affiliations
-\affil[1]{Author institution}
+% Author affiliations, use the number of the author to refer to them
+\affil[1]{Author's institution}
 \affil[2]{Another Author's institution}
-
-% extra things
-\setcounter{Maxaffil}{0}
-\renewcommand\Affilfont{\itshape\small}
 
 
 \title{Physik Laborbericht Dokumentation}
@@ -61,6 +56,7 @@ useful/needed packages. Another addition are the following tcolorboxes:
 \begin{mainbox}{Mainbox}
     mainbox, this is for important things, maybe something like the following:
 
+% Nested mainbox
 \begin{mainbox}{Erkenntnis}
     Daraus ergibt sich
     \[ F_{el} \propto \frac{1}{r^2} .\] 
@@ -72,17 +68,29 @@ useful/needed packages. Another addition are the following tcolorboxes:
     subbux, for less important things, that are still highlight worthy.
 \end{subbox}
 
+
 \begin{subsubbox}
     subsubbox, to highlight something, but without title.
 \end{subsubbox}
 
+here are the boxes nested
+\begin{mainbox}{Here you}
+    \begin{ff}{can see}
+        \begin{aufgabe}{a lot of}
+            \begin{subbox}{nested}
+                \begin{subsubbox}
+                    boxes
+                \end{subsubbox}
+            \end{subbox}
+        \end{aufgabe}
+    \end{ff}
+\end{mainbox}
 
 
 
 \section{Citing}
 One cites as usual, e.g. ``The \TeX{}book''~\cite{knuth1986texbook}\\
-There is one addition, the command \textit{bib} to use the package to make it easier optional.
-
+There is no addition yet, it already makes very much sense.
 
 
 
