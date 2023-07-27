@@ -1,32 +1,43 @@
 \documentclass[twocolumn]{article}
+
 \input{preamble.tex}
 
 \bibliography{example.bib}
 
 
-%% Note: If your authors are always the same you can move this to the preamble
-% Authors, add more if you need to
-\author[1]{Author}
-\author[2]{Author}
-
-% Author affiliations, use the number of the author to refer to them
-\affil[1]{Author's institution}
-\affil[2]{Another Author's institution}
-
-
-\title{Physik Laborbericht Dokumentation}
-\date{}
-
 \begin{document}
-\maketitle
+
+\begin{titlingpage}
+    %%%%%%%% Title begin %%%%%%%% 
+    \title{Physik Laborbericht Dokumentation}
+
+    \author{first}
+    \affil[1]{Author's institution}
+
+    \author{second}
+    \affil[2]{Another Author's institution}
+
+    \date{\today}
+
+    \maketitle
+    %%%%%%%% Title end %%%%%%%% 
+
+    \vspace{2.5cm}
+
+    \begin{abstract}
+        The presented \LaTeX\ preamble/template is tailored for writing physics lab
+        reports, featuring specialized tcolorboxes for clarity and emphasis. These
+        include ``Forschungsfrage'' for defining the research question, ``Aufgabe'' for
+        guiding tasks, and nested ``Mainbox'' for crucial content. The template allows
+        seamless citing and showcases potential for becoming a comprehensive package.
+        Its organization and visual appeal offer promising prospects for enhancing
+        physics report writing.
+    \end{abstract}
+\end{titlingpage}
 
 
-\begin{abstract}
-  In this document the author will try to explin the preamble he wrote.
 
-  Further this abstract is to show that the preamble, or rather lab reports
-  should contain an abstract, which is here made with the abstract package.
-\end{abstract}
+
 
 This is ideally becoming a package or class later, but for now a preamble will do.
 
@@ -94,7 +105,7 @@ There is no addition yet, it already makes very much sense.
 
 
 
-\vfill
+%\vfill
 % here the bibliography is printed 
 \printbibliography
 
